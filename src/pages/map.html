@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Pebayuran.sch</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet"
+        href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.css">
+    <link rel="stylesheet" href="/src/assets/gis/css/L.Control.ZoomBar.css">
+    <link rel="stylesheet" href="/src/assets/gis/css/Control.MiniMap.css">
+    <link rel="stylesheet" href="/src/assets/gis/css/Leaflet.Coordinates-0.1.5.css">
+    <link rel="stylesheet" href="/src/assets/gis/css/leaflet.groupedlayercontrol.css">
+</head>
+
+<body>
+    <div id="main" class="w-full h-full min-h-screen overflow-hidden mx-auto">
+        <!-- NAVBAR START -->
+        <nav class="mx-auto mt-[30px] w-full max-w-[1280px] px-[75px] text-pastilaris-black">
+            <div class="flex items-center justify-between rounded-full bg-pastilaris-black px-[30px] py-[10px]">
+                <div class="flex items-center space-x-[30px]">
+                    <a href="#"
+                        class="text-pastilaris-primary font-bold flex text-2xl hover:text-white transition-all duration-200">
+                        Pebayuran.
+                        <span class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
+                    </a>
+                    <div class="h-[50px] border border-[#6C8079]"></div>
+                    <ul class="flex items-center space-x-10 font-semibold">
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/map.html">Peta Sekolah</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/news.html">Berita</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex space-x-[14px] font-semibold">
+                    <a href="" class="rounded-full border border-white px-5 py-3 font-semibold text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+
+        <div class="flex flex-col gap-[20px] pt-16">
+            <section id="best-choices" class="max-w-[1280px] w-full overflow-hidden mx-auto">
+                <div class="flex flex-col gap-[30px] px-[75px]">
+                    <h2 class="font-bold text-[46px] text-center pt-2 pb-4">Peta Sekolah di Kecamatan Pebayuran</h2>
+                    <!-- MAPS START -->
+                    <div class="container z-0">
+                        <div id="map" class="mb-5" style="height: 520px;">
+                        </div>
+                    </div>
+                    <!-- MAPS END -->
+
+                    <!-- LOCATION LIST START -->
+                    <h2 class="font-bold text-[46px] text-center mt-5">Daftar Sekolah di Kecamatan Pebayuran</h2>
+                    <div class="grid w-full grid-cols-3 gap-x-[30px] gap-y-[40px] mt-5 pb-32 ">
+                        <a href="#">
+                            <div
+                                class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover"
+                                            src="/src/assets/images/sekolah/sekolah1.jpg" alt="SMPN 1 Pebayuran" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SMPN 1 Pebayuran</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran, Desa Kertasari,
+                                        Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> 6°9'59.76" S</p>
+                                        <p><strong>Longitude:</strong> 107°15'23.40" E</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah2.jpg" alt="SMAN 1 Pebayuran" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SMAN 1 Pebayuran</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jalan Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2062</p>
+                                        <p><strong>Longitude:</strong> 107.2920</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah3.jpg" alt="SDN Kertasari 02" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDN Kertasari 02</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jalan Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2083</p>
+                                        <p><strong>Longitude:</strong> 107.2920</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah4.jpg" alt="DIT Al-Hikmah" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDIT Al-Hikmah</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jalan Raya Pebayuran, RT 04 RW 03, Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2084</p>
+                                        <p><strong>Longitude:</strong> 107.2923</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Swasta</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah5.jpg" alt="SDN Kertasari 01" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDN Kertasari 01</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, <br> Provinsi Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> 6°12'53.28" S</p>
+                                        <p><strong>Longitude:</strong> 107°17'13.92" E</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah6.jpg" alt="SMP PGRI Pebayuran" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SMP PGRI Pebayuran</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran, Desa/Kelurahan Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Provinsi Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2133</p>
+                                        <p><strong>Longitude:</strong> 107.2771</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Swasta</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah7.jpg" alt="MTs Al-Hidayah 01 Pebayuran" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">MTs Al-Hidayah 01 Pebayuran</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran RT 003/03, Desa Kertajaya, Kecamatan Pebayuran, Kabupaten Bekasi, Provinsi Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2115</p>
+                                        <p><strong>Longitude:</strong> 107.2857</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Swasta</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah8.jpg" alt="SDN Kertasari 03" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDN Kertasari 03</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jalan Raya Pebayuran RT 03/RW 03, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2132</p>
+                                        <p><strong>Longitude:</strong> 107.2859</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah9.jpg" alt="Al-Binaa Islamic Boarding School" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">Al-Binaa Islamic Boarding School</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, <br> Jawa Barat​</p>
+
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710​</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.1372</p>
+                                        <p><strong>Longitude:</strong> 107.2596</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Swasta</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah10.jpg" alt="Pesantren Islam Hidayatunnajah" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">Pesantren Islam Hidayatunnajah</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran Km. 8, Kertasari, Pebayuran, Bekasi, Jawa Barat.</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2103</p>
+                                        <p><strong>Longitude:</strong> 107.2540</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Pesantren Swasta</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah11.jpg" alt="SDN Bantarjaya 01" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDN Bantarjaya 01</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran, Kampung Pintu RT 003/001, Desa Bantarjaya, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat.</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2103</p>
+                                        <p><strong>Longitude:</strong> 107.2540</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah12.jpg" alt="SDN Bantarjaya 03" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDN Bantarjaya 03</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jl. Raya Pebayuran, Desa/Kelurahan Bantarjaya, Kecamatan Pebayuran, Kabupaten Bekasi, Provinsi Jawa Barat.</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2100</p>
+                                        <p><strong>Longitude:</strong> 107.2500</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a> 
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah13.jpg" alt="SDN Kertasari 04" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDN Kertasari 04</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Kp. Tambun, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat.</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.197 (6° 11' 49.20" S)</p>
+                                        <p><strong>Longitude:</strong> 107.2728 (107° 16' 22.08" E)</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah14.jpg" alt="SDN Kertajaya 02" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">SDN Kertajaya 02</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Kampung Teko, Desa Kertajaya, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat.</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.171</p>
+                                        <p><strong>Longitude:</strong> 107.2747</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Negeri</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex max-w-[400px] flex-col gap-4 rounded-[20px] pb-4 ring-1 ring-black transition-all duration-300 hover:ring-pastilaris-primary shadow-md">
+                                <div class="relative">
+                                    <div class="h-[200px] w-full overflow-hidden rounded-t-[20px]">
+                                        <img class="h-full w-full object-cover" src="/src/assets/images/sekolah/sekolah15.jpg" alt="STAI Al-Binaa" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 px-5">
+                                    <h2 class="text-balance text-lg font-bold text-pastilaris-black">STAI Al-Binaa</h2>
+                                    <p class="text-sm text-gray-700">Alamat: Jalan Raya Pebayuran No. 23, Desa Kertajaya, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat.</p>
+                                    <p class="text-sm text-gray-700">Kode Pos: 17710</p>
+                                    <div class="flex flex-col text-sm text-gray-600">
+                                        <p><strong>Latitude:</strong> -6.2372</p>
+                                        <p><strong>Longitude:</strong> 107.2596</p>
+                                    </div>
+                                    <hr class="border-t-2 border-gray-300 my-3">
+                                    <p class="text-sm text-gray-600"><strong>Status Sekolah:</strong> Perguruan tinggi Swasta</p>
+                                </div>
+                            </div>
+                        </a>                        
+                    </div>
+                    <!-- LOCATION LIST END -->
+                </div>
+            </section>
+            <footer
+                class="relative z-10 w-full overflow-hidden mx-auto bg-pastilaris-black -mt-[10px] pt-[10px] -gap-[100px]">
+                <div class="flex flex-col gap-[50px] px-[75px] pt-8 max-w-[1280px] mx-auto">
+                    <div class="flex gap-[100px] items-center">
+                        <div class="flex flex-col gap-[30px]">
+                            <a href="#"
+                                class="text-pastilaris-primary font-bold flex text-2xl hover:text-weserve-red transition-all duration-200">
+                                Pebayuran.
+                                <span
+                                    class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
+                            </a>
+                            <p class="font-medium text-lg text-white leading-[28px]">Website Terbaik dalam
+                                menyediakan
+                                <br>Lokasi Sekolah di Kecamatan Pebayuran.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-[70px] content-center justify-end">
+                            <div class="flex flex-col gap-[30px]">
+                                <h4 class="text-white font-bold text-[18px]">Products</h4>
+                                <div class="flex flex-col gap-4">
+                                    <a href="#" class="text-slate-100 font-medium">Makanan</a>
+                                    <a href="#" class="text-slate-100 font-medium">Minuman</a>
+                                    <a href="#" class="text-slate-100 font-medium">Produk Kecantikan</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-[30px]">
+                                <h4 class="text-white font-bold text-[18px]">Resouces</h4>
+                                <div class="flex flex-col gap-4">
+                                    <a href="#" class="text-slate-100 font-medium">Support 24/7</a>
+                                    <a href="#" class="text-slate-100 font-medium">Help Center</a>
+                                    <a href="#" class="text-slate-100 font-medium">Peta Interaktif</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-[30px]">
+                                <h4 class="text-white font-bold text-[18px]">Company</h4>
+                                <div class="flex flex-col gap-4">
+                                    <a href="#" class="text-slate-100 font-medium">Privacy & Policy</a>
+                                    <a href="#" class="text-slate-100 font-medium">Terms and Conditions</a>
+                                    <a href="#" class="text-slate-100 font-medium">Investor Relations</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-pastilaris-black font-medium">All Rights Reserved • Copyright
+                        Pebayuran.sch
+                        2024
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/src/js/script.js"></script>
+    <script src="/src/js/swiper.js"></script>
+
+    <!-- Jquery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <!-- Leaflet Script -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <script src="/src/assets/gis/js/leaflet.groupedlayercontrol.js"></script>
+    <script src="/src/assets/gis/js/L.Control.ZoomBar.js"></script>
+    <script src="/src/assets/gis/js/Leaflet.Coordinates-0.1.5.min.js"></script>
+
+    <script src="/src/js/leaflet/layer.js"></script>
+    <script src="/src/js/map-gis.js"></script>
+</body>
+
+</html>

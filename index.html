@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Pebayuran.sch</title>
+</head>
+
+<body>
+    <div id="main" class="w-full h-full min-h-screen overflow-hidden mx-auto">
+        <!-- NAVBAR START -->
+        <nav class="mx-auto mt-[30px] w-full max-w-[1280px] px-[75px] text-pastilaris-black">
+            <div class="flex items-center justify-between rounded-full bg-pastilaris-black px-[30px] py-[10px]">
+                <div class="flex items-center space-x-[30px]">
+                    <a href="#"
+                        class="text-pastilaris-primary font-bold flex text-2xl hover:text-white transition-all duration-200">
+                        Pebayuran.
+                        <span class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
+                    </a>
+                    <div class="h-[50px] border border-[#6C8079]"></div>
+                    <ul class="flex items-center space-x-10 font-semibold">
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/map.html">Peta Sekolah</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/news.html">Berita</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex space-x-[14px] font-semibold">
+                    <a href="" class="rounded-full border border-white px-5 py-3 font-semibold text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+        <div class="flex flex-col gap-[100px]">
+            <section id="hero-section" class="max-w-[1280px] w-full overflow-hidden mx-auto">
+                <div class="px-[75px] pt-[80px] flex justify-between items-center">
+                    <div class="flex flex-col gap-[40px] mr-4">
+                        <h1 class="text-[60px] font-extrabold leading-tight">
+                            Membangun
+                            <span class="relative">
+                                Generasi Cerdas
+                                <span
+                                    class="absolute inset-y-0 bottom-0 left-0 -z-10 my-auto h-1/2 w-full bg-pastilaris-primary"></span>
+                            </span>
+                            <br />
+                            di
+                            <span class="relative">
+                                Pebayuran
+                                <span
+                                    class="absolute inset-y-0 bottom-0 left-0 -z-10 my-auto h-1/2 w-full bg-pastilaris-primary"></span>
+                            </span>
+                        </h1>
+                        <p class="text-lg font-medium text-lg leading-[32px]">
+                            Website ini hadir untuk mendukung akses pendidikan dengan menyediakan informasi sekolah,
+                            peta, dan berita terbaru. Mari bersama membangun generasi cerdas untuk masa depan!
+                        </p>
+                        <div class="flex space-x-[14px]">
+                            <a href="" class="rounded-full bg-pastilaris-primary px-[30px] py-5 font-bold">Lihat Peta</a>
+                            <a href=""
+                                class="rounded-full border border-pastilaris-black px-[30px] py-5 font-semibold">More Info</a>
+                        </div>
+                    </div>
+                    <div class="w-[550px] h-auto shrink-0 overflow-hidden ms-4">
+                        <img src="src/assets/images/thumbnails/thumbnail.jpg"
+                            class="rounded-lg w-full h-full object-cover" alt="thumbnail">
+                    </div>
+                </div>
+            </section>
+            <section id="gallery" class="w-full mx-auto px-[20px]">
+                <div class="flex flex-col gap-[30px] items-center">
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <h2 class="font-clash-display font-semibold text-[46px]">Galeri Sekolah</h2>
+                        <p class="font-medium text-lg text-weserve-grey leading-[32px]">
+                            Galeri Sekolah di Kecamatan Pebayuran
+                        </p>
+                    </div>
+                    <div class="w-full overflow-hidden">
+                        <div class="flex gap-[20px] py-[30px] animate-infinite-scroll">
+                            <div class="flex gap-5">
+                                <div class="flex gap-[20px]">
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah1.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah2.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah3.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah4.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah5.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah6.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah7.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah8.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah9.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex gap-[20px]">
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah5.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                                <div id="button"
+                                                    class="hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 group-hover:block transition-all duration-300">
+                                                    <a href="#"
+                                                        class="py-[10px] px-[30px] bg-weserve-red rounded-full group-hover:text-pastilaris-black font-semibold hover:shadow-lg hover:shadow-weserve-red/30 transition-all duration-300">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah3.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                                <div id="button"
+                                                    class="hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 group-hover:block transition-all duration-300">
+                                                    <a href="#"
+                                                        class="py-[10px] px-[30px] bg-weserve-red rounded-full group-hover:text-pastilaris-black font-semibold hover:shadow-lg hover:shadow-weserve-red/30 transition-all duration-300">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah7.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                                <div id="button"
+                                                    class="hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 group-hover:block transition-all duration-300">
+                                                    <a href="#"
+                                                        class="py-[10px] px-[30px] bg-weserve-red rounded-full group-hover:text-pastilaris-black font-semibold hover:shadow-lg hover:shadow-weserve-red/30 transition-all duration-300">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="!w-fit p-[1px]">
+                                        <a href="#">
+                                            <div
+                                                class="relative rounded-[16px] hover:ring-4 hover:ring-pastilaris-primary transition-all duration-300 shrink-0 overflow-hidden group">
+                                                <div class="w-[320px] h-[220px] shrink-0 rounded-[16px]">
+                                                    <img src="src/assets/images/sekolah/sekolah3.jpg"
+                                                        class="w-full h-full object-cover" alt="thumbnail">
+                                                </div>
+                                                <div id="button"
+                                                    class="hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 group-hover:block transition-all duration-300">
+                                                    <a href="#"
+                                                        class="py-[10px] px-[30px] bg-weserve-red rounded-full group-hover:text-pastilaris-black font-semibold hover:shadow-lg hover:shadow-weserve-red/30 transition-all duration-300">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hot-news"
+                class="mx-auto flex max-h-[457px] w-full max-w-[1130px] flex-col items-center gap-[30px]">
+                <div class="flex flex-col gap-[10px] text-center">
+                    <h2 class="font-clash-display font-semibold text-[46px]">Berita</h2>
+                    <p class="font-medium text-lg text-weserve-grey leading-[32px]">
+                        Berita Pendidikan Terbaru
+                    </p>
+                </div>
+                <div class="grid max-h-[349px] w-full grid-cols-3 gap-[30px] focus:ring-black">
+                    <a href="">
+                        <div
+                            class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black">
+                            <div class="relative flex">
+                                <div
+                                    class="absolute left-5 top-5 flex max-h-[34px] w-fit items-center justify-center rounded-full bg-white px-[18px] py-2">
+                                    <span class="text-center text-xs font-bold">SPORT</span>
+                                </div>
+                                <div class="h-[200px] w-full overflow-hidden rounded-[20px]">
+                                    <img class="h-full w-full object-cover" src="src/assets/images/sekolah/sekolah1.jpg"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="flex max-h-[81px] w-full flex-col gap-[6px]">
+                                <h2 class="text-balance text-lg font-bold">Bersepeda dapat membuat diri menjadi lebih
+                                    baik lagi</h2>
+                                <p class="text-sm text-[#A3A6AE]">12 Jun, 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div
+                            class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black">
+                            <div class="relative flex">
+                                <div
+                                    class="absolute left-5 top-5 flex max-h-[34px] w-fit items-center justify-center rounded-full bg-white px-[18px] py-2">
+                                    <span class="text-center text-xs font-bold">ENTERNAINMENT</span>
+                                </div>
+                                <div class="h-[200px] w-full overflow-hidden rounded-[20px]">
+                                    <img class="h-full w-full object-cover" src="src/assets/images/sekolah/sekolah2.jpg"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="flex max-h-[81px] w-full flex-col gap-[6px]">
+                                <h2 class="text-balance text-lg font-bold">Beberapa artis ini merayakan ultah di tengah
+                                    hutan raya</h2>
+                                <p class="text-sm text-[#A3A6AE]">12 Jun, 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div
+                            class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black">
+                            <div class="relative flex">
+                                <div
+                                    class="absolute left-5 top-5 flex max-h-[34px] w-fit items-center justify-center rounded-full bg-white px-[18px] py-2">
+                                    <span class="text-center text-xs font-bold">POLITIC</span>
+                                </div>
+                                <div class="h-[200px] w-full overflow-hidden rounded-[20px]">
+                                    <img class="h-full w-full object-cover" src="src/assets/images/sekolah/sekolah3.jpg"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="flex max-h-[81px] w-full flex-col gap-[6px]">
+                                <h2 class="text-balance text-lg font-bold">Terjadi demo pada ibu kota jakarta membuat
+                                    macet parah</h2>
+                                <p class="text-sm text-[#A3A6AE]">12 Jun, 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <div class="mx-auto flex w-full max-w-[1280px] items-center justify-between px-[142px] pt-16">
+                <div class="h-auto w-[456px] rounded rounded-lg">
+                    <img src="/src/assets/images/thumbnails/headmaster.jpg" alt="" class="shadow-xl rounded rounded-lg" />
+                </div>
+                <div class="w-[470px] space-y-[30px]">
+                    <div class="flex space-x-1">
+                        <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                        <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                        <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                        <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                        <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                    </div>
+                    <div class="space-y-[10px]">
+                        <h2 class="text-[32px] font-bold leading-[46px]">
+                            Dengan informasi dari website ini tentang
+                            <span class="bg-pastilaris-primary"> sekolah-sekolah, berita terbaru, dan peta interaktif,</span>
+                            kami berharap dapat menjadi jembatan antara sekolah dan masyarakat.
+                        </h2>
+                        <p class="text-base font-medium leading-7">Kepala Sekolah SD Negeri Pebayuran</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer
+                class="relative z-10 w-full overflow-hidden mx-auto bg-pastilaris-black -mt-[10px] pt-[10px] -gap-[100px]">
+                <div class="flex flex-col gap-[50px] px-[75px] pt-8 max-w-[1280px] mx-auto">
+                    <div class="flex gap-[100px] items-center">
+                        <div class="flex flex-col gap-[30px]">
+                            <a href="#"
+                                class="text-pastilaris-primary font-bold flex text-2xl hover:text-weserve-red transition-all duration-200">
+                                Pebayuran.
+                                <span
+                                    class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
+                            </a>
+                            <p class="font-medium text-lg text-white leading-[28px]">Website Terbaik dalam
+                                menyediakan
+                                <br>Lokasi Sekolah di Kecamatan Pebayuran.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-[70px] content-center justify-end">
+                            <div class="flex flex-col gap-[30px]">
+                                <h4 class="text-white font-bold text-[18px]">Products</h4>
+                                <div class="flex flex-col gap-4">
+                                    <a href="#" class="text-slate-100 font-medium">Makanan</a>
+                                    <a href="#" class="text-slate-100 font-medium">Minuman</a>
+                                    <a href="#" class="text-slate-100 font-medium">Produk Kecantikan</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-[30px]">
+                                <h4 class="text-white font-bold text-[18px]">Resouces</h4>
+                                <div class="flex flex-col gap-4">
+                                    <a href="#" class="text-slate-100 font-medium">Support 24/7</a>
+                                    <a href="#" class="text-slate-100 font-medium">Help Center</a>
+                                    <a href="#" class="text-slate-100 font-medium">Peta Interaktif</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-[30px]">
+                                <h4 class="text-white font-bold text-[18px]">Company</h4>
+                                <div class="flex flex-col gap-4">
+                                    <a href="#" class="text-slate-100 font-medium">Privacy & Policy</a>
+                                    <a href="#" class="text-slate-100 font-medium">Terms and Conditions</a>
+                                    <a href="#" class="text-slate-100 font-medium">Investor Relations</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-pastilaris-black font-medium">All Rights Reserved • Copyright
+                        Pebayuran.sch
+                        2024
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/swiper.js"></script>
+</body>
+
+</html>
