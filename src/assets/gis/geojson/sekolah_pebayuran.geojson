@@ -1,0 +1,245 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2565,
+                    -6.1666
+                ]
+            },
+            "properties": {
+                "name": "SMPN 1 Pebayuran",
+                "alamat": "Jl. Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2920,
+                    -6.2062
+                ]
+            },
+            "properties": {
+                "name": "SMAN 1 Pebayuran",
+                "alamat": "Jalan Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2920,
+                    -6.2083
+                ]
+            },
+            "properties": {
+                "name": "SDN Kertasari 02",
+                "alamat": "Jalan Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2923,
+                    -6.2084
+                ]
+            },
+            "properties": {
+                "name": "SDIT Al-Hikmah",
+                "alamat": "Jalan Raya Pebayuran, RT 04 RW 03, Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Swasta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2728,
+                    -6.197
+                ]
+            },
+            "properties": {
+                "name": "SDN Kertasari 04",
+                "alamat": "Kp. Tambun, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2596,
+                    -6.1372
+                ]
+            },
+            "properties": {
+                "name": "Al-Binaa Islamic Boarding School",
+                "alamat": "Jl. Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Swasta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2540,
+                    -6.2103
+                ]
+            },
+            "properties": {
+                "name": "SDN Bantarjaya 01",
+                "alamat": "Jl. Raya Pebayuran, Kampung Pintu RT 003/001, Desa Bantarjaya, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2500,
+                    -6.2100
+                ]
+            },
+            "properties": {
+                "name": "SDN Bantarjaya 03",
+                "alamat": "Jl. Raya Pebayuran, Desa/Kelurahan Bantarjaya, Kecamatan Pebayuran, Kabupaten Bekasi, Provinsi Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2859,
+                    -6.2132
+                ]
+            },
+            "properties": {
+                "name": "SDN Kertasari 03",
+                "alamat": "Jalan Raya Pebayuran RT 03/RW 03, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Swasta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2857,
+                    -6.2115
+                ]
+            },
+            "properties": {
+                "name": "MTs Al-Hidayah 01",
+                "alamat": "Jl. Raya Pebayuran RT 003/03, Desa Kertajaya, Kecamatan Pebayuran, Kabupaten Bekasi, Provinsi Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Swasta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2771,
+                    -6.2133
+                ]
+            },
+            "properties": {
+                "name": "SMP PGRI Pebayuran",
+                "alamat": "Jl. Raya Pebayuran, Desa/Kelurahan Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Provinsi Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Swasta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2872,
+                    -6.2148
+                ]
+            },
+            "properties": {
+                "name": "SDN Kertasari 01",
+                "alamat": "Jl. Raya Pebayuran, Desa Kertasari, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2747,
+                    -6.171
+                ]
+            },
+            "properties": {
+                "name": "SDN Kertajaya 02",
+                "alamat": "Kampung Teko, Desa Kertajaya, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Negeri"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2768,
+                    -6.1785
+                ]
+            },
+            "properties": {
+                "name": "Pesantren Islam Hidayatunnajah",
+                "alamat": "Jl. Raya Pebayuran Km. 8, Kertasari, Pebayuran, Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Pesantren swasta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.2596,
+                    -6.2372
+                ]
+            },
+            "properties": {
+                "name": "STAI Al-Binaa",
+                "alamat": "Jalan Raya Pebayuran No. 23, Desa Kertajaya, Kecamatan Pebayuran, Kabupaten Bekasi, Jawa Barat",
+                "kode_pos": "17710",
+                "status": "Perguruan tinggi swasta"
+            }
+        }
+    ]
+}

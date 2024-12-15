@@ -1,14 +1,14 @@
-var alfamart = new L.LayerGroup();
+var sekolah = new L.LayerGroup();
 var jalan = new L.LayerGroup();
 var kecamatan = new L.LayerGroup();
 var bekasi = new L.LayerGroup();
 var sungai = new L.LayerGroup();
 
 var map = L.map('map', {
-    center: [-6.309889, 107.022761],
+    center: [-6.2100, 107.2500],
     zoom: 13,
     zoomControl: false,
-    layers: [alfamart, kecamatan]
+    layers: [sekolah, kecamatan]
 });
 
 var GoogleMaps = new L.TileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
@@ -40,11 +40,11 @@ var baseLayers = {
 
 var groupedOverlays = {
     "Peta Dasar": {
-        'Alfamart': alfamart,
-        'Kecamatan Mustika Jaya': kecamatan,
-        'Kota Bekasi': bekasi,
-        'Jalan Kota Bekasi': jalan,
-        'Sungai Kota Bekasi': sungai,
+        'Sekolah': sekolah,
+        'Kecamatan Pebayuran': kecamatan,
+        'Kab. Bekasi': bekasi,
+        'Jalan Kab. Bekasi': jalan,
+        'Sungai Kab. Bekasi': sungai,
     }
 };
 
@@ -57,7 +57,7 @@ GEOJSON LAYER
 var baseUrl = window.location.origin;
 console.log(baseUrl);
 
-$.getJSON(baseUrl + '/src/assets/gis/geojson/alfa_bekasi.geojson', function (data) {
+$.getJSON(baseUrl + '/src/assets/gis/geojson/sekolah_pebayuran.geojson', function (data) {
     var ratIcon = L.icon({
         iconUrl: '/src/assets/gis/marker.png',
         iconSize: [24, 24]
@@ -66,13 +66,13 @@ $.getJSON(baseUrl + '/src/assets/gis/geojson/alfa_bekasi.geojson', function (dat
         pointToLayer: function (feature, latlng) {
             var marker = L.marker(latlng, { icon: ratIcon });
             // Menggabungkan name dan address dalam bindPopup
-            marker.bindPopup('<b>' + feature.properties.NAMA + '</b><br>' + feature.properties.ALAMAT);
+            marker.bindPopup('<b>' + feature.properties.name + '</b><br>' + feature.properties.alamat);
             return marker;
         }
-    }).addTo(alfamart);
+    }).addTo(sekolah);
 });
 
-$.getJSON(baseUrl +'/src/assets/gis/geojson/jalan_bekasi.geojson', function (data) {
+$.getJSON(baseUrl +'/src/assets/gis/geojson/jalan_kab_bekasi.geojson', function (data) {
     L.geoJson(data, {
         style: function (feature) {
             var color,
@@ -88,7 +88,7 @@ $.getJSON(baseUrl +'/src/assets/gis/geojson/jalan_bekasi.geojson', function (dat
     }).addTo(jalan); 
 });
 
-$.getJSON(baseUrl +'/src/assets/gis/geojson/sungai_bekasi.geojson', function (data) {
+$.getJSON(baseUrl +'/src/assets/gis/geojson/sungai_kab_bekasi.geojson', function (data) {
     L.geoJson(data, {
         style: function (feature) {
             var color,
@@ -105,11 +105,11 @@ $.getJSON(baseUrl +'/src/assets/gis/geojson/sungai_bekasi.geojson', function (da
 });
 
 
-$.getJSON(baseUrl + '/src/assets/gis/geojson/mustikajaya_bekasi.geojson', function (kode) {
+$.getJSON(baseUrl + '/src/assets/gis/geojson/kecamatan_pebayuran.geojson', function (kode) {
     L.geoJson(kode, {
         style: function (feature) {
             return { 
-                color: "#3388FF", 
+                color: "#FFBF00", 
                 weight: 3, 
                 fillOpacity: 0.3
             };
@@ -117,7 +117,7 @@ $.getJSON(baseUrl + '/src/assets/gis/geojson/mustikajaya_bekasi.geojson', functi
     }).addTo(kecamatan);
 });
 
-$.getJSON(baseUrl + '/src/assets/gis/geojson/administrasi_desa_bekasi.geojson', function (kode) {
+$.getJSON(baseUrl + '/src/assets/gis/geojson/desa_kab_bekasi.geojson', function (kode) {
     L.geoJson(kode, {
         style: function (feature) {
             return { 
