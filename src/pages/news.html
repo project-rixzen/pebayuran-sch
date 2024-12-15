@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Pebayuran.sch</title>
+</head>
+
+<body>
+    <div id="main" class="w-full h-full min-h-screen overflow-hidden mx-auto">
+        <!-- NAVBAR START -->
+        <nav class="mx-auto mt-[30px] w-full max-w-[1280px] px-[75px] text-pastilaris-black">
+            <div class="flex items-center justify-between rounded-full bg-pastilaris-black px-[30px] py-[10px]">
+                <div class="flex items-center space-x-[30px]">
+                    <a href="#"
+                        class="text-pastilaris-primary font-bold flex text-2xl hover:text-white transition-all duration-200">
+                        Pebayuran.
+                        <span class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
+                    </a>
+                    <div class="h-[50px] border border-[#6C8079]"></div>
+                    <ul class="flex items-center space-x-10 font-semibold">
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/map.html">Peta Sekolah</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/news.html">Berita</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex space-x-[14px] font-semibold">
+                    <a href="" class="rounded-full border border-white px-5 py-3 font-semibold text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- NAVBAR END -->
+        <div class="flex flex-col gap-[100px] pt-[80px] mx-auto">
+            <section id="news" class="w-full mx-auto px-16 mb-20">
+                <div class="flex flex-col gap-[30px] items-center mb-20">
+                    <div class="flex flex-col gap-[10px] text-center">
+                        <h2 class="font-clash-display font-semibold text-[46px]">Berita Pendidikan</h2>
+                        <p class="font-medium text-weserve-grey leading-[32px]">
+                            Berita Pendidikan Terbaru di Indonesia
+                        </p>
+                    </div>
+                    <div class="grid w-full grid-cols-3 gap-[30px] focus:ring-black">
+                        <a href="https://www.detik.com/edu/edutainment/d-7687371/anggaran-untuk-pendidikan-naik-kemenkeu-alokasikan-rp724-3t-untuk-2025"
+                            class="mx-auto">
+                            <div
+                                class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black pb-4">
+                                <div class="relative flex">
+                                    <div class="h-auto w-full overflow-hidden rounded-[20px]">
+                                        <img class="h-full w-full object-cover"
+                                            src="/src/assets/images/berita/berita_1.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="flex w-full flex-col gap-[6px]">
+                                    <h2 class="text-balance text-lg font-bold">Anggaran untuk Pendidikan Naik! Kemenkeu
+                                        Alokasikan Rp724,3T untuk 2025</h2>
+                                    <p class="text-sm text-[#A3A6AE]">15 Des, 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.detik.com/edu/sekolah/d-7684932/unik-pemkab-sumbawa-barat-masukkan-surfing-sebagai-ekstrakulikuler-di-sekolah"
+                            class="mx-auto">
+                            <div
+                                class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black pb-4">
+                                <div class="relative flex">
+                                    <div class="h-auto w-full overflow-hidden rounded-[20px]">
+                                        <img class="h-full w-full object-cover"
+                                            src="/src/assets/images/berita/berita_2.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="flex w-full flex-col gap-[6px]">
+                                    <h2 class="text-balance text-lg font-bold">Unik! Pemkab Sumbawa Barat Masukkan
+                                        Surfing sebagai Ekstrakulikuler di Sekolah</h2>
+                                    <p class="text-sm text-[#A3A6AE]">13 Des, 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="mx-auto">
+                            <div
+                                class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black pb-4">
+                                <div class="relative flex">
+                                    <div class="h-auto w-full overflow-hidden rounded-[20px]">
+                                        <img class="h-full w-full object-cover"
+                                            src="/src/assets/images/berita/berita_3.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="flex w-full flex-col gap-[6px]">
+                                    <h2 class="text-balance text-lg font-bold">48 Sekolah Rusak Akibat Bencana di
+                                        Cianjur</h2>
+                                    <br>
+                                    <p class="text-sm text-[#A3A6AE]">6 Des, 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.tempo.co/internasional/pemerintah-jepang-sambut-kunjungan-pondok-pesantren-indonesia-1180229"
+                            class="mx-auto">
+                            <div
+                                class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black pb-4">
+                                <div class="relative flex">
+                                    <div class="h-auto w-full overflow-hidden rounded-[20px]">
+                                        <img class="h-full w-full object-cover"
+                                            src="/src/assets/images/berita/berita_4.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="flex w-full flex-col gap-[6px]">
+                                    <h2 class="text-balance text-lg font-bold">Pemerintah Jepang Sambut Kunjungan
+                                        Pondok Pesantren Indonesia</h2>
+                                    <br>
+                                    <p class="text-sm text-[#A3A6AE]">11 Des, 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.kompas.com/edu/read/2024/12/12/192201671/beasiswa-kagama-2024-bagi-mahasiswa-ugm-ada-bantuan-rp-3-juta"
+                            class="mx-auto">
+                            <div
+                                class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black pb-4">
+                                <div class="relative flex">
+                                    <div class="h-auto w-full overflow-hidden rounded-[20px]">
+                                        <img class="h-full w-full object-cover"
+                                            src="/src/assets/images/berita/berita_5.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="flex w-full flex-col gap-[6px]">
+                                    <h2 class="text-balance text-lg font-bold">Beasiswa Kagama 2024 bagi Mahasiswa
+                                        UGM, Ada Bantuan Rp 3 Juta</h2>
+                                    <p class="text-sm text-[#A3A6AE]">12 Des, 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.kompas.com/edu/read/2024/12/15/184315971/ini-rekomendasi-peneliti-brin-terkait-permasalahan-di-ppdb"
+                            class="mx-auto">
+                            <div
+                                class="flex max-w-[357px] flex-col gap-4 rounded-[20px] px-5 py-[26px] ring-1 ring-[#E8EBF4] transition-all duration-300 hover:ring-2 hover:ring-black pb-4">
+                                <div class="relative flex">
+                                    <div class="h-auto w-full overflow-hidden rounded-[20px]">
+                                        <img class="h-full w-full object-cover"
+                                            src="/src/assets/images/berita/berita_6.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="flex w-full flex-col gap-[6px]">
+                                    <h2 class="text-balance text-lg font-bold">Ini Rekomendasi Peneliti BRIN Terkait Permasalahan di PPDB</h2>
+                                    <p class="text-sm text-[#A3A6AE]">15 Des, 2024</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+            </section>
+        </div>
+    </div>
+    <footer class="relative z-10 w-full overflow-hidden mx-auto bg-pastilaris-black -mt-[10px] pt-[10px] -gap-[100px]">
+        <div class="flex flex-col gap-[50px] px-[75px] pt-8 max-w-[1280px] mx-auto">
+            <div class="flex gap-[100px] items-center">
+                <div class="flex flex-col gap-[30px]">
+                    <a href="#"
+                        class="text-pastilaris-primary font-bold flex text-2xl hover:text-weserve-red transition-all duration-200">
+                        Pebayuran.
+                        <span class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
+                    </a>
+                    <p class="font-medium text-lg text-white leading-[28px]">Website Terbaik dalam
+                        menyediakan
+                        <br>Lokasi Sekolah di Kecamatan Pebayuran.
+                    </p>
+                </div>
+                <div class="grid grid-cols-3 gap-[70px] content-center justify-end">
+                    <div class="flex flex-col gap-[30px]">
+                        <h4 class="text-white font-bold text-[18px]">Products</h4>
+                        <div class="flex flex-col gap-4">
+                            <a href="#" class="text-slate-100 font-medium">Makanan</a>
+                            <a href="#" class="text-slate-100 font-medium">Minuman</a>
+                            <a href="#" class="text-slate-100 font-medium">Produk Kecantikan</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[30px]">
+                        <h4 class="text-white font-bold text-[18px]">Resouces</h4>
+                        <div class="flex flex-col gap-4">
+                            <a href="#" class="text-slate-100 font-medium">Support 24/7</a>
+                            <a href="#" class="text-slate-100 font-medium">Help Center</a>
+                            <a href="#" class="text-slate-100 font-medium">Peta Interaktif</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[30px]">
+                        <h4 class="text-white font-bold text-[18px]">Company</h4>
+                        <div class="flex flex-col gap-4">
+                            <a href="#" class="text-slate-100 font-medium">Privacy & Policy</a>
+                            <a href="#" class="text-slate-100 font-medium">Terms and Conditions</a>
+                            <a href="#" class="text-slate-100 font-medium">Investor Relations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-pastilaris-black font-medium">All Rights Reserved • Copyright
+                Pebayuran.sch
+                2024
+            </p>
+        </div>
+    </footer>
+    </div>
+    </div>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/src/js/script.js"></script>
+    <script src="/src/js/swiper.js"></script>
+</body>
+
+</html>

@@ -14,175 +14,171 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-     <!-- favicon -->
-     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>InfoAlfa</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Pebayuran.sch</title>
 </head>
 
 <body>
     <div id="main" class="w-full h-full min-h-screen overflow-hidden mx-auto">
         <!-- NAVBAR START -->
-        <nav id="navbar" class="fixed top-0 w-full backdrop-blur-md z-50">
-            <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center px-[75px] py-[30px]">
-                <div class="w-[175px] shrink-0 overflow-hidden ">
-                    <!-- <img src="/src/assets/images/logos/logo-black.svg" class="w-full h-full object-cover" alt="logo"> -->
+        <nav class="mx-auto mt-[30px] w-full max-w-[1280px] px-[75px] text-pastilaris-black">
+            <div class="flex items-center justify-between rounded-full bg-pastilaris-black px-[30px] py-[10px]">
+                <div class="flex items-center space-x-[30px]">
                     <a href="#"
-                        class="text-red-700 font-bold flex text-2xl hover:text-blue-700 transition-all duration-200">
-                        Info
-                        <span class="text-black hover:text-blue-700 transition-all duration-200">Alfa</span>
+                        class="text-pastilaris-primary font-bold flex text-2xl hover:text-white transition-all duration-200">
+                        Pebayuran.
+                        <span class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
                     </a>
+                    <div class="h-[50px] border border-[#6C8079]"></div>
+                    <ul class="flex items-center space-x-10 font-semibold">
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/map.html">Peta Sekolah</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/news.html">Berita</a>
+                        </li>
+                        <li class="text-pastilaris-primary hover:text-pastilaris-primary hover:underline">
+                            <a href="/src/pages/about.html">About Us</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="flex items-center gap-[30px]">
-                    <li>
-                        <a href="/index.html" class="font-medium">Home</a>
-                    </li>
-                    <li>
-                        <a href="/src/pages/map.html" class="font-medium">Peta Mitra</a>
-                    </li>
-                    <li>
-                        <a href="/src/pages/promo.html" class="font-medium">Promo</a>
-                    </li>
-                    <li>
-                        <a href="#" class="font-medium">About</a>
-                    </li>
-                </ul>
-                <div class="flex gap-[10px] items-center">
-                    <a href="#" class="bg-weserve-maroon rounded-full px-[30px] py-[10px] text-white font-semibold">Sign
-                        In</a>
+                <div class="flex space-x-[14px] font-semibold">
+                    <a href="" class="rounded-full border border-white px-5 py-3 font-semibold text-white">Login</a>
                 </div>
             </div>
         </nav>
+
         <!-- NAVBAR END -->
-        <div class="flex flex-col gap-[100px] pt-[80px]">
+        <div class="flex flex-col gap-[100px] pt-10">
             <section id="hero-section" class="max-w-[1280px] w-full overflow-hidden mx-auto">
                 <div class="px-[75px] pt-[80px] flex justify-between items-center">
-                    <div class="w-[500px] h-[550px] shrink-0 overflow-hidden">
-                        <img src="/src/assets/images/thumbnails/about.jpg" class="rounded-lg w-full h-full object-cover"
-                            alt="thumbnail">
+                    <div class="w-[500px] h-[550px] shrink-0 overflow-hidden me-4">
+                        <img src="/src/assets/images/thumbnails/about-school.jpg"
+                            class="rounded-lg w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-[40px] ms-12">
                         <div class="!w-fit bg-white rounded-full px-4 py-2 shadow-lg">
                             <div class="flex gap-[6px] items-center">
                                 <img src="/src/assets/images/icons/global.svg" class="w-6 h-6" alt="icons">
-                                <p class="font-semibold">Tentang Website InfoAlfa</p>
+                                <p class="font-semibold">Tentang Website Pebayuran.sch</p>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-[10px]">
-                            <h1 class="font-clash-display text-5xl leading-[100%] font-semibold min-h-[140px]">Temukan Alfamart Terdekat dengan Mudah</h1>
-                            <p class="font-medium text-weserve-grey">Kami menghadirkan website ini untuk mempermudah Anda menemukan lokasi Alfamart di Kota Bekasi. Dengan navigasi yang intuitif dan peta interaktif, Anda bisa menjelajahi mitra Alfamart terdekat sesuai kebutuhan.</p>
+                        <div class="flex flex-col">
+                            <h1 class="text-5xl leading-[100%] font-semibold min-h-[140px]">Sekolah Terbaik Di Pebayuran
+                            </h1>
+                            <p class="font-medium text-xl text-weserve-grey">
+                                Website ini dirancang untuk memudahkan Anda menemukan lokasi sekolah di Kecamatan
+                                Pebayuran. Dengan navigasi yang sederhana dan peta interaktif, Anda dapat dengan mudah
+                                menjelajahi sekolah terdekat sesuai kebutuhan.</p>
                         </div>
                         <div class="flex gap-5 items-center">
                             <a href="#profil-heading"
-                                class="bg-weserve-red rounded-full px-10 py-4 font-bold text-[18px] text-white">Profil Pengembang</a>
+                                class="bg-pastilaris-black rounded-full px-10 py-4 font-bold text-[18px] text-white">Profil
+                                Pengembang</a>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </section>
             <section id="profil-heading" class="w-full mx-auto px-[20px] mb-28">
                 <div class="flex flex-col gap-[30px] items-center mb-16">
                     <div class="flex flex-col gap-[10px] text-center">
-                        <h2 class="font-clash-display font-semibold text-[46px]">Profil Developer Web</h2>
+                        <h2 class="font-semibold text-[46px]">Profil Developer Web</h2>
                     </div>
-                </div>
-                <div class="flex justify-center items-center">
-                    <div class="max-w-6xl bg-white rounded-2xl shadow-xl overflow-hidden flex items-center space-x-12 p-8">
-                        <!-- Foto -->
-                        <div class="w-[300px] h-[300px] flex-shrink-0 overflow-hidden rounded-2xl border-4 border-weserve-red">
-                            <img src="/src/assets/images/alifia.jpeg" class="w-full h-full object-cover" alt="Profile Picture">
+                    <div class="mx-auto flex w-full max-w-[1280px] items-center justify-between px-[142px]">
+                        <div class="h-auto w-[456px] rounded rounded-lg">
+                            <img src="/src/assets/images/alvin.jpeg" alt=""
+                                class="shadow-xl rounded rounded-lg" />
                         </div>
-                        <!-- Informasi -->
-                        <div class="flex flex-col justify-center flex-grow space-y-8">
-                            <!-- Nama -->
-                            <div>
-                                <h3 class="font-extrabold text-2xl text-gray-800">Alifia Maharani</h3>
-                                <p class="text-lg text-gray-600">Domisili: Kota Bekasi</p>
+                        <div class="w-[470px] space-y-[30px]">
+                            <div class="flex space-x-1">
+                                <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                                <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                                <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                                <img src="/src/assets/images/icons/Star 4.svg" alt="" />
+                                <img src="/src/assets/images/icons/Star 4.svg" alt="" />
                             </div>
-                            <!-- NIM -->
-                            <div>
-                                <h3 class="font-bold text-2xl text-gray-800">NIM</h3>
-                                <p class="text-lg text-gray-600">11210930000006</p>
-                            </div>
-                            <!-- Skills -->
-                            <div>
-                                <h3 class="font-bold text-2xl text-gray-800">Skills</h3>
-                                <p class="text-lg text-gray-600">UI/UX Designer</p>
-                            </div>
-                            <!-- Tombol Kontak -->
-                            <div>
-                                <a href="#"
-                                    class="bg-weserve-red text-white px-5 py-2 rounded-full font-bold text-xl hover:bg-weserve-maroon shadow-lg">
-                                    Contacts
-                                </a>
+                            <div class="space-y-[10px]">
+                                <div class="flex flex-col justify-center flex-grow space-y-8">
+                                    <!-- Nama -->
+                                    <div>
+                                        <h3 class="font-extrabold text-2xl text-black">
+                                            <span class="bg-pastilaris-primary">Alvin Hanif Muslim</span>
+                                        </h3>
+                                        <p class="text-lg text-gray-800">Domisili: Kabupaten Bekasi</p>
+                                    </div>
+                                    <!-- NIM -->
+                                    <div>
+                                        <h3 class="font-bold text-2xl text-black">NIM</h3>
+                                        <p class="text-lg text-gray-800">11200930000008</p>
+                                    </div>
+                                    <!-- Skills -->
+                                    <div>
+                                        <h3 class="font-bold text-2xl text-black">Skills</h3>
+                                        <p class="text-lg text-gray-800">Esports Athlete</p>
+                                    </div>
+                                    <!-- Tombol Kontak -->
+                                    <div>
+                                        <a href="#"
+                                            class="bg-pastilaris-black text-white px-5 py-2 rounded-full font-bold text-xl hover:bg-weserve-maroon shadow-lg">
+                                            Contact
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                           
             </section>
         </div>
     </div>
-    <footer class="relative z-10 w-full overflow-hidden mx-auto bg-[#290707] -mt-[10px] pt-[10px]">
-        <div class="flex flex-col gap-[50px] px-[75px] pb-[50px] pt-[40px] max-w-[1280px] mx-auto">
+    <footer class="relative z-10 w-full overflow-hidden mx-auto bg-pastilaris-black -mt-[10px] pt-[10px] -gap-[100px]">
+        <div class="flex flex-col gap-[50px] px-[75px] pt-8 max-w-[1280px] mx-auto">
             <div class="flex gap-[100px] items-center">
                 <div class="flex flex-col gap-[30px]">
                     <a href="#"
-                        class="text-red-700 font-bold flex text-2xl hover:text-blue-700 transition-all duration-200">
-                        Info
-                        <span class="text-white hover:text-blue-700 transition-all duration-200">Alfa</span>
+                        class="text-pastilaris-primary font-bold flex text-2xl hover:text-pastilaris-black transition-all duration-200">
+                        Pebayuran.
+                        <span class="text-white hover:text-pastilaris-primary transition-all duration-200">Sch</span>
                     </a>
-                    <p class="font-medium text-weserve-light leading-[28px]">Website Terbaik dalam menyediakan
-                        <br>Lokasi IndoAlfa di Kota Bekasi.
+                    <p class="font-medium text-lg text-white leading-[28px]">Website Terbaik dalam
+                        menyediakan
+                        <br>Lokasi Sekolah di Kecamatan Pebayuran.
                     </p>
-                    <div class="flex gap-[14px] items-center">
-                        <a href="#" class="bg-white rounded-full p-[10px]">
-                            <img src="/src/assets/images/icons/sms.svg" class="w-[24px] h-[24px]" alt="icon">
-                        </a>
-                        <a href="#" class="bg-white rounded-full p-[10px]">
-                            <img src="/src/assets/images/icons/global-purple.svg" class="w-[24px] h-[24px]" alt="icon">
-                        </a>
-                        <a href="#" class="bg-white rounded-full p-[10px]">
-                            <img src="/src/assets/images/icons/call.svg" class="w-[24px] h-[24px]" alt="icon">
-                        </a>
-                        <a href="#" class="bg-white rounded-full p-[10px]">
-                            <img src="/src/assets/images/icons/video-play.svg" class="w-[24px] h-[24px]" alt="icon">
-                        </a>
-                    </div>
                 </div>
                 <div class="grid grid-cols-3 gap-[70px] content-center justify-end">
                     <div class="flex flex-col gap-[30px]">
                         <h4 class="text-white font-bold text-[18px]">Products</h4>
                         <div class="flex flex-col gap-4">
-                            <a href="#" class="text-weserve-light font-medium">Makanan</a>
-                            <a href="#" class="text-weserve-light font-medium">Minuman</a>
-                            <a href="#" class="text-weserve-light font-medium">Produk Kecantikan</a>
-                            <a href="#" class="text-weserve-light font-medium">Frozen Foods</a>
-                            <a href="#" class="text-weserve-light font-medium">Daily Needs</a>
+                            <a href="#" class="text-slate-100 font-medium">Makanan</a>
+                            <a href="#" class="text-slate-100 font-medium">Minuman</a>
+                            <a href="#" class="text-slate-100 font-medium">Produk Kecantikan</a>
                         </div>
                     </div>
                     <div class="flex flex-col gap-[30px]">
                         <h4 class="text-white font-bold text-[18px]">Resouces</h4>
                         <div class="flex flex-col gap-4">
-                            <a href="#" class="text-weserve-light font-medium">Support 24/7</a>
-                            <a href="#" class="text-weserve-light font-medium">Help Center</a>
-                            <a href="#" class="text-weserve-light font-medium">Peta Interaktif</a>
-                            <a href="#" class="text-weserve-light font-medium">Blog & Tips</a>
-                            <a href="#" class="text-weserve-light font-medium">About Us</a>
+                            <a href="#" class="text-slate-100 font-medium">Support 24/7</a>
+                            <a href="#" class="text-slate-100 font-medium">Help Center</a>
+                            <a href="#" class="text-slate-100 font-medium">Peta Interaktif</a>
                         </div>
                     </div>
                     <div class="flex flex-col gap-[30px]">
                         <h4 class="text-white font-bold text-[18px]">Company</h4>
                         <div class="flex flex-col gap-4">
-                            <a href="#" class="text-weserve-light font-medium">Privacy & Policy</a>
-                            <a href="#" class="text-weserve-light font-medium">Terms and Conditions</a>
-                            <a href="#" class="text-weserve-light font-medium">Investor Relations</a>
-                            <a href="#" class="text-weserve-light font-medium">Join With Us</a>
-                            <a href="#" class="text-weserve-light font-medium">Our Statistics</a>
+                            <a href="#" class="text-slate-100 font-medium">Privacy & Policy</a>
+                            <a href="#" class="text-slate-100 font-medium">Terms and Conditions</a>
+                            <a href="#" class="text-slate-100 font-medium">Investor Relations</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="text-center text-weserve-light font-medium">All Rights Reserved • Copyright InfoAlfa 2024
+            <p class="text-center text-pastilaris-black font-medium">All Rights Reserved • Copyright
+                Pebayuran.sch
+                2024
             </p>
         </div>
     </footer>
